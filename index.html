@@ -5,63 +5,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BackOffice</title>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Arial', 'PingFang TC', 'Microsoft JhengHei', 'sans-serif'],
-                    },
-                },
-            },
-        };
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./dist/output.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 
 <body class="min-h-screen bg-[#F2F4F6]">
-    <header class="flex items-center justify-between h-[68px] bg-[#212529] px-[72px]">
+    <header class="flex items-center justify-between h-17 bg-[#212529] px-18">
         <!-- 左邊區塊 -->
-        <div class="flex items-center gap-[11px]">
+        <div class="flex items-center gap-2.75">
             <div class="flex items-center gap-10">
-                <h1 class="text-[22px] leading-[1.5] font-extralight text-[#DEE2E6]">
+                <h1 class="text-[22px] leading-normal font-extralight text-[#DEE2E6]">
                     BackOffice
                 </h1>
-                <div class="h-[31px] w-[2px] rounded-[10px] bg-[#6C757D]"></div>
+                <div class="h-7.75 w-0.5 rounded-[10px] bg-[#6C757D]"></div>
             </div>
 
             <!-- Nav Tab -->
             <div class="flex items-center gap-5">
-                <div class="flex h-[38px] items-center justify-center rounded py-[10px]">
+                <div class="flex h-9.5 items-center justify-center rounded py-2.5">
                     <span class="text-[16px] font-normal text-[#ADB5BD]">Account</span>
                 </div>
 
-                <div class="flex h-[38px] items-center justify-center rounded py-[10px]">
+                <div class="flex h-9.5 items-center justify-center rounded py-2.5">
                     <span class="text-[16px] font-normal text-[#ADB5BD]">Masking Word</span>
                 </div>
 
-                <div class="flex h-[38px] items-center justify-center rounded py-[10px] gap-[10px]">
+                <div class="flex h-9.5 items-center justify-center rounded py-2.5 gap-2.5">
                     <span class="text-[16px] font-normal text-[#ADB5BD]">玩家管理</span>
                     <span class="fa-solid fa-chevron-down text-[12px] text-[#ADB5BD]"></span>
                 </div>
 
-                <div class="flex h-[38px] items-center justify-center rounded py-[10px] gap-[10px]">
+                <div class="flex h-9.5 items-center justify-center rounded py-2.5 gap-2.5">
                     <span class="text-[16px] font-normal text-white">Chat Room</span>
                     <span class="fa-solid fa-chevron-down text-[12px] text-white"></span>
                 </div>
 
-                <div class="flex h-[38px] items-center justify-center rounded py-[10px] gap-[10px]">
+                <div class="flex h-9.5 items-center justify-center rounded py-2.5 gap-2.5">
                     <span class="text-[16px] font-normal text-[#ADB5BD]">Host Event</span>
                     <span class="fa-solid fa-chevron-down text-[12px] text-[#ADB5BD]"></span>
                 </div>
 
-                <div class="flex h-[38px] items-center justify-center rounded py-[10px] gap-[10px]">
+                <div class="flex h-9.5 items-center justify-center rounded py-2.5 gap-2.5">
                     <span class="text-[16px] font-normal text-[#ADB5BD]">Report</span>
                     <span class="fa-solid fa-chevron-down text-[12px] text-[#ADB5BD]"></span>
                 </div>
 
-                <div class="flex h-[38px] items-center justify-center rounded py-[10px] gap-[10px]">
+                <div class="flex h-9.5 items-center justify-center rounded py-2.5 gap-2.5">
                     <span class="text-[16px] font-normal text-[#ADB5BD]">行銷活動</span>
                 </div>
 
@@ -72,9 +61,9 @@
         <div class="flex items-center">
             <span class="text-[16px] text-[#DEE2E6] mr-7">Admin Hello</span>
 
-            <div class="relative h-[40px] w-[100px] mr-3">
+            <div class="relative h-10 w-25 mr-3">
                 <select
-                    class="w-full h-full appearance-none rounded-full border border-[#495057] bg-[#343A40] px-3 text-[16px] text-[#F8F9FA] leading-[1.5] outline-none">
+                    class="w-full h-full appearance-none rounded-full border border-[#495057] bg-[#343A40] px-3 text-[16px] text-[#F8F9FA] leading-normal outline-none">
                     <option>English</option>
                     <option>中文</option>
                 </select>
@@ -90,7 +79,7 @@
         </div>
     </header>
     <!-- Content -->
-    <main class="flex flex-col items-center px-[72px] gap-2 mt-2 mb-2">
+    <main class="flex flex-col items-center px-18 gap-2 mt-2 mb-2">
 
         <!-- 最上面那排 -->
         <section class="flex w-full items-center justify-between">
@@ -103,12 +92,12 @@
                     <span>2023/01/01</span>
                     <span>PM 12:00</span>
                 </div>
-                <div class="flex items-center text-[16px] text-[#495057] gap-[10px] ">
+                <div class="flex items-center text-[16px] text-[#495057] gap-2.5 ">
                     <span class="font-bold">England Premier league</span>
                     <div class=" h-5 w-px bg-[#ADB5BD]"></div>
                     <span>Chelsea VS Manchester United</span>
                     <div class=" h-5 w-px bg-[#ADB5BD]"></div>
-                    <span class="w-[140px] overflow-hidden text-ellipsis whitespace-nowrap">689Sports, N88, N88,
+                    <span class="w-35 overflow-hidden text-ellipsis whitespace-nowrap">689Sports, N88, N88,
                         N88</span>
                 </div>
 
@@ -122,7 +111,7 @@
         <!-- 監控打卡 -->
         <section class="flex w-full items-center justify-between rounded bg-white px-9 py-5">
             <div class="flex items-center gap-2">
-                <span class="w-[110px] text-[18px] text-[#495057]">
+                <span class="w-27.5 text-[18px] text-[#495057]">
                     監控打卡
                 </span>
                 <div class="flex items-center gap-2 text-[14px] text-[#495057]">
@@ -139,7 +128,7 @@
 
             <div class="flex flex-col w-full gap-2">
                 <div class="flex w-full items-center justify-between">
-                    <h3 class="text-[22px] leading-[1.5] text-[#495057]">
+                    <h3 class="text-[22px] leading-normal text-[#495057]">
                         監控填表
                     </h3>
                     <button class="flex h-8 items-center justify-center rounded-full bg-[#084298] px-5">
@@ -148,7 +137,7 @@
                 </div>
 
                 <div class="flex w-full items-center justify-between py-2 text-[#495057]">
-                    <div class="flex items-center leading-[1.5]">
+                    <div class="flex items-center leading-normal">
                         <span class="text-[16px] font-bold">
                             首次儲存時間：
                         </span>
@@ -156,7 +145,7 @@
                             2025-12-30 15:00
                         </span>
                     </div>
-                    <div class="flex items-center leading-[1.5]">
+                    <div class="flex items-center leading-normal">
                         <span class="text-[16px] font-bold">
                             最後編輯時間：
                         </span>
@@ -171,26 +160,26 @@
 
                 <!-- 左邊標題區 -->
                 <div class="flex flex-1 items-start gap-2">
-                    <div class="flex items-center justify-center shrink-0 size-[30px] rounded-full bg-[#CFE2FF]">
-                        <span class="text-[18px] leading-[1.5] tracking-1px text-black ">
+                    <div class="flex items-center justify-center shrink-0 size-7.5 rounded-full bg-[#CFE2FF]">
+                        <span class="text-[18px] leading-normal tracking-1px text-black ">
                             1
                         </span>
                     </div>
 
-                    <div class="flex flex-col gap-1">
-                        <div class="text-[18px] leading-[1.5] text-[#495057]">
+                    <div class="flex flex-col gap-2.75">
+                        <div class="text-[18px] leading-normal text-[#495057]">
                             <p>Thời gian lên stream muộn*</p>
                             <p>遲到分鐘數*</p>
                         </div>
 
-                        <p class="text-[12px] leading-[1.5] text-[#ADB5BD]">
+                        <p class="text-[12px] leading-normal text-[#ADB5BD]">
                             Nếu không đến muộn, viết 0 如果沒有遲到，請寫 0
                         </p>
                     </div>
                 </div>
                 <!-- 右邊輸入區 -->
                 <input type="text" value="10"
-                    class="flex flex-1 items-center h-9 bg-[#F8F9FA] text-[#495057] border border-[#ADB5BD] rounded px-[10px] outline-none"/>
+                    class="flex flex-1 items-center h-9 bg-[#F8F9FA] text-[#495057] border border-[#ADB5BD] rounded px-2.5 outline-none"/>
 
             </div>
 
@@ -203,23 +192,23 @@
                 <!-- 第二題 -->
                 <div class="flex w-full items-center gap-5 pr-10">
                     <div class="flex flex-1 items-start gap-2">
-                        <div class="flex items-center justify-center shrink-0 size-[30px] rounded-full bg-[#CFE2FF]">
-                            <span class="text-[18px] leading-[1.5] tracking-1px text-black ">
+                        <div class="flex items-center justify-center shrink-0 size-7.5 rounded-full bg-[#CFE2FF]">
+                            <span class="text-[18px] leading-normal tracking-1px text-black ">
                                 2
                             </span>
                         </div>
 
-                        <div class="flex flex-col gap-1">
-                            <div class="text-[18px] leading-[1.5] text-[#495057]">
+                        <div class="flex flex-col gap-2.75">
+                            <div class="text-[18px] leading-normal text-[#495057]">
                                 <p>Logo hiển thị chính xác Logo*</p>
                                 <p>正確顯示*</p>
                             </div>
 
-                            <ul class="list-disc pl-4 text-[12px] leading-[1.5] text-[#ADB5BD]">
+                            <ul class="list-disc pl-4 text-[12px] leading-normal text-[#ADB5BD]">
                                 <li>Chọn Logo: Dựa trên lịch trình chương trình, sử dụng logo tương ứng với Site (Tất cả
                                     các Site sử dụng logo SABA).</li>
                                 <li>Thẻ tên streamer: Cần hiển thị chính xác bên cạnh người dẫn chương trình.</li>
-                                <li>Logo 選擇：依照節目表的 Site，使用對應的 Logo (All Site 使用 SABA Logo)</li>
+                                <li>Logo 選擇：依照節目表的 Site,使用對應的 Logo (All Site 使用 SABA Logo)</li>
                             </ul>
                         </div>
                     </div>
@@ -241,19 +230,19 @@
                 <!-- 第三題 -->
                 <div class="flex w-full items-center gap-5 pr-10">
                     <div class="flex flex-1 items-start gap-2">
-                        <div class="flex items-center justify-center shrink-0 size-[30px] rounded-full bg-[#CFE2FF]">
-                            <span class="text-[18px] leading-[1.5] text-black ">
+                        <div class="flex items-center justify-center shrink-0 size-7.5 rounded-full bg-[#CFE2FF]">
+                            <span class="text-[18px] leading-normal text-black ">
                                 3
                             </span>
                         </div>
 
-                        <div class="flex flex-col gap-1">
-                            <div class="text-[18px] leading-[1.5] text-[#495057]">
+                        <div class="flex flex-col gap-2.75">
+                            <div class="text-[18px] leading-normal text-[#495057]">
                                 <p>Tỉ số hiển thị chính xác*</p>
                                 <p>比分正確顯示*</p>
                             </div>
 
-                            <ul class="list-disc pl-4 text-[12px] leading-[1.5] text-[#ADB5BD]">
+                            <ul class="list-disc pl-4 text-[12px] leading-normal text-[#ADB5BD]">
                                 <li>Hiển thị tỉ số: Tỉ số phải hiển thị đầy đủ (không bị che khuất bởi logo, thẻ tên
                                     hoặc streamer).</li>
                                 <li>比分顯示：比分完整顯示 (不被 Logo、名牌、主播擋住)</li>
